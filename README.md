@@ -2,7 +2,7 @@
 
 ###  make_STL_of_Array  Convert a voxelised object contained within a 3D logical array into an STL surface mesh
  ==========================================================================
-  AUTHOR:     <br />   Amir-Hosein Safari   <br />
+   <br /> AUTHOR:     <br />   Amir-Hosein Safari   <br />
   CONTACT:  <br />       amirsfr5353@gmail.com  <br />
   INSTITUTION:  <br />   Max-Planck institute for informatic  <br />
   DATE:  <br />     25th Aug 2018  <br />
