@@ -10,7 +10,8 @@
   EXAMPLE       make_STL_of_Array(FileName,Data,scaleX,scaleY,scaleZ)  
         ..or..  [Vertices, Triangle, Quads] = make_STL_of_Array(FileName,Data,scaleX,scaleY,scaleZ)
  
-  INPUTS        FileName   - string            - Filename of the STL file.
+  INPUTS        
+                FileName   - string            - Filename of the STL file.
  
                 Data  - 3D logical array - Voxelised data
                                       1 => Inside the object
@@ -26,7 +27,8 @@
                         voxel in mm
  
  
-  OUTPUTS       vertices - Nx3 array   - A list of the x,y,z coordinates of
+  OUTPUTS       
+                vertices - Nx3 array   - A list of the x,y,z coordinates of
                            each vertex in the mesh.
                 
                 Triangle    - Nx3 array   - A list of the vertices used in
@@ -38,6 +40,3 @@
                            number in the array vertices.
  ==========================================================================
 
- ======================================================
-    ALLOCATING THE MEMORY FOR MATRIXES
- ======================================================
