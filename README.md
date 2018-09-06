@@ -1,11 +1,11 @@
 # TrainingDataFor3D_Printing   <br />
 
-  make_STL_of_Array  Convert a voxelised object contained within a 3D logical array into an STL surface mesh
+###  make_STL_of_Array  Convert a voxelised object contained within a 3D logical array into an STL surface mesh
  ==========================================================================
-  AUTHOR        Amir-Hosein Safari  
-  CONTACT       amirsfr5353@gmail.com
-  INSTITUTION   Max-Planck institute for informatic
-  DATE          25th Aug 2018
+  AUTHOR      <br />   Amir-Hosein Safari   <br />
+  CONTACT       amirsfr5353@gmail.com  <br />
+  INSTITUTION   Max-Planck institute for informatic  <br />
+  DATE          25th Aug 2018  <br />
  
   EXAMPLE       make_STL_of_Array(FileName,Data,scaleX,scaleY,scaleZ)  
         ..or..  [Vertices, Triangle, Quads] = make_STL_of_Array(FileName,Data,scaleX,scaleY,scaleZ)
