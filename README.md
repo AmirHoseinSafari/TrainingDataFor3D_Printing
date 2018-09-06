@@ -1,4 +1,4 @@
-# TrainingDataFor3D_Printing   
+# TrainingDataFor3D_Printing   <br />
 
   make_STL_of_Array  Convert a voxelised object contained within a 3D logical array into an STL surface mesh
  ==========================================================================
@@ -11,8 +11,9 @@
         ..or..  [Vertices, Triangle, Quads] = make_STL_of_Array(FileName,Data,scaleX,scaleY,scaleZ)
  
   INPUTS        
-                FileName   - string            - Filename of the STL file.
  
+                FileName   - string            - Filename of the STL file.
+                
                 Data  - 3D logical array - Voxelised data
                                       1 => Inside the object
                                       0 => Outside the object
@@ -28,9 +29,10 @@
  
  
   OUTPUTS       
+  
                 vertices - Nx3 array   - A list of the x,y,z coordinates of
                            each vertex in the mesh.
-                
+                           
                 Triangle    - Nx3 array   - A list of the vertices used in
                            each Triangle of the mesh, identified using the row
                            number in the array vertices.
