@@ -13,15 +13,14 @@ function [FinalArray] = CurvesArrayMaker(NumberOfCubesInRow, NumberOfCubesInColu
     %           zBase: a number which reperesent number of layers of the base
     %
     % loop over the number of rows and columns in our final array
-    
+    numOfSamples = 70 - 1;   % 70 is number of curves file that we have so it's a constant!
     for i1 = 1 : NumberOfCubesInRow
         for i2 = 1 : NumberOfCubesInColumn
-            numOfSamples = 70 - 1;     
-
             disp (i1);
             disp (i2);
 
             % put base zBase layer, for example here we have 50 layer of base
+            % 60 is the number of voxels in x and y axis!
             for i = 1 : 60
                 for j = 1 : 60
                     for z = 1 : zBase
@@ -100,7 +99,7 @@ function [FinalArray] = CurvesArrayMaker(NumberOfCubesInRow, NumberOfCubesInColu
 
     % save the layers as fig
 
-    for ii = 1 : 110
+    for ii = 1 : 110 % this is the number of total z layers
        imagesc(FinalArray(:,:,ii));
        savefig(strcat(int2str(ii),'.fig'));
     end
