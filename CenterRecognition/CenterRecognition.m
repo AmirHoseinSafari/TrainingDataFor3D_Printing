@@ -27,7 +27,6 @@ function [centerArray] = CenterRecognition(imageAddress, NumberOfCubesInRow, Num
             %remove border
             % Reminder: borders are at right and bottom
             cube = cube(1: (size(cube,1)/7) * 6, 1: (size(cube,2)/7) * 6);
-            figure, imshow(cube);
 
             % picking up the center      
             centerArray(((i - 1) * j + (j - 1)) * (sizeOfTheCenter + 1) + 1:((i - 1) * j + (j - 1)) * (sizeOfTheCenter + 1) + 10,1:sizeOfTheCenter + 1) = cube(size(cube,1)/2 - sizeOfTheCenter/2 : size(cube,1)/2 + sizeOfTheCenter/2 , size(cube,2)/2 - sizeOfTheCenter/2 : size(cube,2)/2 + sizeOfTheCenter/2);
