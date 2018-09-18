@@ -1,19 +1,19 @@
 function [] = CubeMaker(fileAddress,scaleX,scaleY,scaleZ)    
 
 
-    % IN THIS CODE WE BUILD EVERY SINGLE CUBES FROM THE .mat FILES!
+   	% IN THIS CODE WE BUILD EVERY SINGLE CUBES FROM THE .mat FILES!
 	% AFTER RUNNING THIS CODE YOU WILL HAVE .stl AND .mat FILES OF EVERY CUBES
-    %
-    % INPUTS:   fileAddress: THE ADDRESS WHICH IS CONTAINS THE FOLFERS 
+    	%
+    	% INPUTS:   fileAddress: THE ADDRESS WHICH IS CONTAINS THE FOLFERS 
 	%						(FROM 1 TO 15) OF Final_Data WHICH IS AVAILABLE FROM Google Drive
-    %           scaleX     - A number which means the X size of every
+   	%           scaleX     - A number which means the X size of every
 	%                       voxel in mm
 	%           scaleY     - A number which means the Y size of every 
 	%                       voxel in mm
 	%           scaleZ     - A number which means the Z size of every
 	%                       voxel in mm
-    %
-    % OUTPUTS:  []
+    	%
+    	% OUTPUTS:  []
     
 	% Loop on folders 
     for i = 1 : 15
