@@ -15,7 +15,7 @@ function [] = CubeMaker(fileAddress,scaleX,scaleY,scaleZ)
     	%
     	% OUTPUTS:  []
     
-	% Loop on folders 
+    % Loop on folders 
     for i = 1 : 15
         path = strcat(fileAddress,num2str(i));
         cd (path);
@@ -23,11 +23,11 @@ function [] = CubeMaker(fileAddress,scaleX,scaleY,scaleZ)
         arr = load(strcat(num2str(i) , '_ArrayOfPrint.mat'));
         arr = arr.a;
 		
-		% Loop on every cubes in the .mat file
+	% Loop on every cubes in the .mat file
         for i1 = 1 : size(arr,1)/70
             for i2 = 1 : size(arr,2)/70
                 cube = arr((i1 - 1)*70 + 1:(i1 - 1)*70 + 60, (i2 - 1)*70 + 1:(i2 - 1)*70 + 60,:);
-				% We store them with this approach: 'index in row'_'index in column'
+		% We store them with this approach: 'index in row'_'index in column'
                 save(strcat(num2str(i1),'_',num2str(i2),'.mat'),'cube');
                 make_STL_of_Array(strcat(num2str(i1),'_',num2str(i2)),cube,scaleX,scaleY,scaleZ);
             end
